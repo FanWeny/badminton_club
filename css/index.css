@@ -13,7 +13,7 @@
 .banner{
     margin-bottom: 50px;
 }
-.banner .pic a{
+/* .banner .pic a{
     display: block;
 }
 .banner img{
@@ -32,7 +32,7 @@
     background-color: #ccc;
     border-radius: 50%;
     margin: 5px;
-}
+} */
 hr{
     opacity: 0.3;
     width: 80%;
@@ -124,7 +124,6 @@ hr{
     .HB{
         width: 40px;
         height: 40px;
-        /* background-color: #000; */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -316,7 +315,7 @@ hr{
         display: inline-block;
         text-decoration: none;
         padding: 10px 20px;
-        color: #777;
+        color: #fff;
     }
     #login{
         padding: 8px 16px;
@@ -393,7 +392,6 @@ hr{
     }
     .apply .content{
         width: 50%;
-        /* padding: 40px; */
         margin: 0px 40px;
     }
     .apply .four_title{
@@ -541,13 +539,11 @@ hr{
     .bmt_line:hover,
     .bmt_equip:hover,
     .bmt_shoes:hover{
-        background-color: #faa;
         padding: 10px 50px;
     }
     .bmt_only:hover,
     .bmt_clothes:hover,
     .bmt_bag:hover{
-        background-color: #fa0;
         padding: 10px 50px;
     }
 }

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/hamburger_menu.css">
+    <link rel="stylesheet" href="./css/opentime.css">
+    <!-- <script src="./javascript/slider.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <title>Document</title>
 </head>
@@ -17,11 +21,28 @@
             <img src="./image/logo.svg">
         </a>
         <!-- 漢堡 -->
-        <div class="HB">
+        <!-- <div class="HB">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </div> -->
+        <input type="checkbox" id="navcheck" role="button" title="menu">
+        <label for="navcheck" aria-hidden="true"            title="menu">
+            <span class="burger">
+            <span class="bar">
+                <span class="visuallyhidden">Menu</span>
+            </span>
+            </span>
+        </label>
+        <nav id="menu">
+            <a href="#">球館資訊</a>
+            <a href="#">預約服務</a>
+            <a href="#">課程報名</a>
+            <a href="#">教練介紹</a>
+            <a href="#">店鋪商品</a>
+            <a href="#">登入</a>
+            <!-- <input type="button" id="login" value="登入"> -->
+        </nav>
         <!-- 導覽列 -->
         <nav class="main-nav">
             <a href="#">球館資訊</a>
@@ -29,30 +50,55 @@
             <a href="#">課程報名</a>
             <a href="#">教練介紹</a>
             <a href="#">店鋪商品</a>
-            <input type="button" id="login" value="登入">
+            <a href="#">登入</a>
+            <!-- <input type="button" id="login" value="登入"> -->
         </nav>
     </header>
     <section class="banner">
-        <div class="pic">
+        <div id="sliderBoard">
+            <ul id="content">
+                <li><img src="./image/03.jpg" class="image"></li>
+                <li><img src="./image/240_F_182828249_VqCc7DDNba0rmL9XrUUFuV0JFTADh5X3.jpg" class="image"></li>
+                <li><img src="./image/240_F_170378211_qF8F8d5yt4OSr5q3ntMwftJe8HzvsWcZ.jpg" class="image"></li>
+            </ul>
+            <ul id="contentButton">
+                <!-- <li class="clicked"></li>
+                <li></li>                   <li></li>
+                <li></li> -->
+            </ul>
+        </div>
+        <!-- <div class="pic">
             <a href="#">
                 <img src="./image/05-2.jpg" alt="" class="move">
             </a>
-            <!-- <a href="#">
+             <a href="#">
                 <img src="./image/02.jpg" alt="">
-            </a> -->
-            <!-- <a href="#">
+            </a>
+            <a href="#">
                 <img src="./image/03-1.png" alt="">
-            </a> -->
+            </a>
         </div>
         <div class="circle">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </div> -->
     </section>
     <section class="court_info">
         <h2 class="sub_title">球館資訊</h2>
         <hr>
+        <input type="checkbox" id="toggle" class="toggle__checkbox" />
+
+        <aside class="box">
+	        <label for="toggle" class="toggle"><i class="icon"></i></label>
+	        <section>
+		        <h1 style="--index:1;" class="box__item">營業時間</h1>
+		        <h2 style="--index:2;" class="box__item">Appointments on request</h2>
+		        <p style="--index:3;" class="box__item">Mo, Tue, Thur : 8AM - 12PM</p>
+		        <p style="--index:4;" class="box__item">Wed : 4PM - 7PM</p>
+		        <p style="--index:5;" class="box__item">Wed : 9AM - 11AM</p>
+	        </section>
+        </aside>
         <main class="court">
             <div class="content">
                 <h3 class="third_title">球館簡介</h3>
