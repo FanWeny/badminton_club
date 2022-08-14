@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./css/hamburger_menu.css">
     <link rel="stylesheet" href="./css/opentime.css">
     <!-- <script src="./javascript/slider.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <title>Document</title>
+    <title>羽社</title>
 </head>
 
 <body>
@@ -35,21 +36,21 @@
             </span>
         </label>
         <nav id="menu">
-            <a href="#">球館資訊</a>
-            <a href="#">預約服務</a>
-            <a href="#">課程報名</a>
-            <a href="#">教練介紹</a>
-            <a href="#">店鋪商品</a>
+            <a href="./court-information.html">球館資訊</a>
+            <a href="./reserve-service.html">預約服務</a>
+            <a href="./course-apply.html">課程報名</a>
+            <a href="./coach.html">教練介紹</a>
+            <a href="./products.html">店舖商品</a>
             <a href="#">登入</a>
             <!-- <input type="button" id="login" value="登入"> -->
         </nav>
         <!-- 導覽列 -->
         <nav class="main-nav">
-            <a href="#">球館資訊</a>
-            <a href="#">預約服務</a>
-            <a href="#">課程報名</a>
-            <a href="#">教練介紹</a>
-            <a href="#">店鋪商品</a>
+            <a href="./court-information.html">球館資訊</a>
+            <a href="./reserve-service.html">預約服務</a>
+            <a href="./course-apply.html">課程報名</a>
+            <a href="./coach.html">教練介紹</a>
+            <a href="./products.html">店舖商品</a>
             <a href="#">登入</a>
             <!-- <input type="button" id="login" value="登入"> -->
         </nav>
@@ -100,11 +101,11 @@
 	        </section>
         </aside>
         <main class="court">
-            <div class="content">
+            <div class="content court_first_content">
                 <h3 class="third_title">球館簡介</h3>
                 <p class="text">大陸文件大小，培養對象氣息引擎來的總數，藥品自主，威望周邊，認定欄目各類監管，得知暴力網頁班，不用。</p>
             </div>
-            <div class="pic">
+            <div class="pic_court">
                 <img src="./image/court_green.jpg" alt="球館簡介_場地">
             </div>
         </main>
@@ -126,28 +127,20 @@
         <h2 class="sub_title">預約服務</h2>
         <hr>
         <main class="re_se">
-            <div class="card_item">
-                <div class="pic">
+            <div class="card_item rese_left">
+                <div class="pic_rese">
+                    <h3 class="rese_title">場地預約</h3>
                     <img src="./image/court_small.jpg" alt="">
                 </div>
-                <div class="card">
-
-                </div>
             </div>
-            <div class="card_item_re">
-                <div class="card">
-
-                </div>
-                <div class="pic">
+            <div class="card_item rese_center">
+                <div class="pic_rese">
                     <img src="./image/line.jpg" alt="穿線">
                 </div>
             </div>
-            <div class="card_item">
-                <div class="pic">
+            <div class="card_item rese_right">
+                <div class="pic_rese">
                     <img src="./image/re-se-coach.jpg" alt="">
-                </div>
-                <div class="card">
-
                 </div>
             </div>
         </main>
@@ -263,24 +256,16 @@
                 <span>LINE：Badminton_123</span>
             </div>
             <ul>
-                <li><a href="#">球館資訊</a></li>
-                <li><a href="#">預約服務</a></li>
-                <li><a href="#">課程報名</a></li>
-                <li><a href="#">教練介紹</a></li>
-                <li><a href="#">店鋪商品</a></li>
+                <li><a href="./court-information.html">球館資訊</a></li>
+                <li><a href="./reserve-service.html">預約服務</a></li>
+                <li><a href="./course-apply.html">課程報名</a></li>
+                <li><a href="./coach.html">教練介紹</a></li>
+                <li><a href="./products.html">店鋪商品</a></li>
             </ul>
         </main>
         <hr>
         <p>中壢 TibaMe 個人專題展示用<br>Wayne Web Design 2022 @ com.</p>
     </footer>
 </body>
-<script>
-    var tl = gsap.timeline();
-    tl.to('.move' ,{
-        x: 0,
-        y: 0,
-        duration: 1,
-        rotation: 360,
-    })
-</script>
+<script src="./javascript/scrolltrigger.js"></script>
 </html>

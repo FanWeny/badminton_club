@@ -133,14 +133,14 @@ input {
     font-weight: 900;
   }
   
-  main {
+  /* main {
     overflow: hidden;
-  }
-  main .content {
-    transform: translate3d(0, 0, 0); /* material acceleration */
+  } */
+  /* main .content {
+    transform: translate3d(0, 0, 0); material acceleration
     will-change: transform, filter;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  }
+  } */
   
   [id=navcheck]:checked + label::before {
     opacity: 1;
@@ -167,11 +167,11 @@ input {
   [id=navcheck]:checked ~ nav a {
     transform: translateX(0);
   }
-  [id=navcheck]:checked ~ main .content {
+  /* [id=navcheck]:checked ~ main .content {
     transform: translateX(3em);
     transform-origin: left center;
     filter: blur(2px);
-  }
+  } */
   
   /* helper */
   .visuallyhidden {

@@ -66,11 +66,11 @@
   }
   
   /* _________ BASE LAYOUT __________ */
-  *,
+  /* *,
   *:before,
   *:after {
     box-sizing: border-box;
-  }
+  } */
   
   body,
   html {
