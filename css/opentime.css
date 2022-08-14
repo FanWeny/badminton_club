@@ -90,17 +90,16 @@
     line-height: 1.5;
   }
   
-  h1, h2 {
-    margin: 1.75rem 0 1.05rem;
+  .othersmall_title, .otherlarge_title {
+    margin: 1.75rem 0px 1.05rem;
     line-height: 1.15;
   }
   
-  h1 {
+  .otherlarge_title {
     margin-top: 0;
     font-weight: 600;
-    font-size: 1.802em;
+    font-size: 30px;
   }
-  
-  h2 {
-    font-size: 1.302em;
+  .othersmall_title {
+    font-size: 20px;
   }
