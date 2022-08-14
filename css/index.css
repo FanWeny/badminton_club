@@ -102,6 +102,14 @@
         top: 100%;
         left: 0;
     }
+    .banner{
+        height: 65vh;
+        margin-bottom: 50px;
+    }
+    .banner h2{
+        line-height:20vh;
+        background-color: rgba(255,255,255,.8);
+    }
     /* ================================球館資訊 */
     .court_info{
         margin-bottom: 100px;
