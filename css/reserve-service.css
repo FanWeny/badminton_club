@@ -1,0 +1,139 @@
+.main-list a:nth-child(2){
+    border-bottom: 3px solid #4F1616;
+    font-size: 20px;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px;
+    white-space : nowrap;
+}
+/* =================================共用設定 */
+.title{
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #1b2a7e;
+}
+.sub-title{
+    font-size: 24px;
+}
+.thrid-title{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.line{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-bottom: 50px;
+}
+.reserve-service{
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.s-pic img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -20px;
+    left: 135px;
+}
+.court-rsv,
+.line-rsv,
+.course-rsv{
+    margin-bottom: 100px;
+}
+.choose{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.choose a{
+    padding: 20px 20px;
+    width: 140px;
+    background-color: #0aa;
+    color: #fff;
+    margin: 0 20px;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,.3);
+    transform: scale(1,1);
+    transition: 0.3s;
+}
+.choose a:hover{
+    transform: scale(1.03,1.03);
+    background-color: #fff;
+    color: #4F1616;
+}
+.main-frame{
+    margin-left: 20px;
+    margin-top: 30px;
+    position: relative;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main-frame p{
+    font-size: 16px;
+    line-height: 20px;
+}
+.main-frame .reserve{
+    margin-right: 20px;
+    display: flex;
+    justify-content: end;
+}
+.main-frame a{
+    text-decoration: none;
+    background-color: rgba(86, 171, 65, 0.9);
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid rgb(13, 182, 123);
+    transition: 0.3s;
+}
+.main-frame a:hover{
+    background-color: #fff;
+    color: #4F1616;
+    border: 1px solid rgb(13, 182, 123,.3);
+    font-weight: bold;
+}
+/* =====================================場地預約 */
+.sub-title{
+    text-align: center;
+    background-color: #005662e6;
+    padding: 16px 0;
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+}
+.content-pic{
+    width: 49%;
+    border-radius: 0px 0px 0px 10px;
+    overflow: hidden;
+}
+.content img{
+    width: 120%;
+    transform: scale(1,1);
+    transition: 0.3s;
+}
+.content img:hover{
+    transform: scale(1.05,1.05);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    border: 1px solid rgba(57, 152, 49, 0.3);
+    border-top: hidden;
+    border-radius: 0px 0px 10px 10px;
+    background:linear-gradient(180deg, rgba(99, 212, 228, 0.4) 0%, rgba(187, 232, 159, 0.4) 100%);
+}

@@ -37,4 +37,12 @@ if(minWidth > 768){
         opacity: 1,
         duration: 2,
     });
+
+    // gsap.to(".card", {
+    //     scrollTrigger: ".card",
+    //     x: 400,
+    //     opacity: 1,
+    //     transform: rotate(0,deg),
+    //     duration: 2,
+    // });
 }

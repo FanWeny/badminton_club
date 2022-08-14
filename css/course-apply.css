@@ -1,0 +1,137 @@
+.main-list a:nth-child(3){
+    border-bottom: 3px solid #4F1616;
+    font-size: 20px;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px;
+    white-space : nowrap;
+}
+.title{
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #1b2a7e;
+}
+.sub-title{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.line{
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    width: 100%;
+    margin-bottom: 50px;
+}
+.s-pic img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -20px;
+    left: 135px;
+}
+/* =====================================課程報名 */
+.course-apply{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.choose{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.choose a{
+    padding: 20px 20px;
+    width: 140px;
+    background-color: #0aa;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,.3);
+    transform: scale(1,1);
+    transition: 0.3s;
+}
+.choose a:hover{
+    transform: scale(1.03,1.03);
+    background-color: #fff;
+    color: #4F1616;
+}
+.course-apply .frame{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 30px 30px 0px 0px;
+    overflow: hidden;
+    background:linear-gradient(180deg, rgba(99, 212, 228, 0.4) 0%, rgba(187, 232, 159, 0.4) 100%);
+}
+.bgc{
+    width: 50%;
+    margin: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    transform: scale(1,1);
+    transition: 0.3s;
+}
+.bgc img{
+    width: 100%;
+    height: 100%
+    
+}
+.bgc:hover{
+    box-shadow: 0px 1px 0px 1px;
+    transform: scale(1.02,1.02);
+}
+.course-apply .card{
+    margin: 40px 30px 0px;
+}
+.frame li{
+    padding: 5px;
+}
+.apply{
+    border-top: 2px solid rgba(0,0,0,.1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 100px;
+    border-radius: 0px 0px 30px 30px;
+    background:linear-gradient(180deg, rgba(187, 232, 159, 0.4) 0% ,rgba(99, 212, 228, 0.4) 100%);
+}
+.card-apply{
+    margin-bottom: 50px;
+}
+.card-apply .sub-title,
+.card-apply li{
+    text-align: center;
+}
+.card-apply li{
+    padding: 10px 0;
+}
+.sel{
+    margin: 10px;
+}
+.btn{
+    margin: 10px;
+}
+.btn input{
+    padding: 10px 20px;
+    background-color: #56AB41;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: #fff;
+    font-weight: bold;
+}
+.btn input:hover{
+    background-color: snow;
+    color: #4F1616;
+}

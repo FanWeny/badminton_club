@@ -1,0 +1,125 @@
+/* .main-list a:nth-child(1){
+    border-bottom: 3px solid #4F1616;
+    font-size: 20px;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px;
+    white-space : nowrap;
+} */
+/* ====================================共用設定 */
+/* .title{
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #1b2a7e;
+}
+.sub-title{
+    font-size: 28px;
+    margin-bottom: 25px;
+} */
+/* .line{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-bottom: 50px;
+} */
+.court-info{
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+/* .s-pic img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -20px;
+    left: 135px;
+} */
+/* ==============================球館故事 */
+
+.story{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    position: relative;
+}
+.story .bg{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(170, 197, 153, 0.7);
+    bottom: -50px;
+    z-index: -1;
+}
+.story .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.story .text{
+    margin-top: 100px;
+}
+.story .text p{
+    margin: 30px 0;
+    color: rgba(0, 0, 0, .7);
+}
+.column-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.up,
+.down{
+    width: 50px;
+    height: 50px;
+}
+.people-pic{
+    position: absolute;
+    top: 180px;
+    left: -50px;
+}
+.story .court-pic{
+    margin-bottom: 100px;
+}
+/* ===================================球館設備 */
+.light,
+.space{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.court,
+.public{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.court-em .content{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 60px 80px;
+}
+.court-em .third-title{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.court-em .text{
+    line-height: 25px;
+    color: rgba(0, 0, 0, .7);
+}
+.court-em img{
+    width: 55%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #94E477;
+}
