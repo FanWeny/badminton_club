@@ -1,0 +1,553 @@
+.main-header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #F8FFF6;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
+}
+.banner{
+    margin-bottom: 50px;
+}
+.banner .pic a{
+    display: block;
+}
+.banner img{
+    width: 100%;
+    display: block;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -25px;
+}
+.circle span{
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 5px;
+}
+hr{
+    opacity: 0.3;
+    width: 80%;
+    margin-left: auto;margin-right: auto;
+    margin-bottom: 30px;
+}
+.sub_title{
+    font-size: 32px;
+    text-align: center;
+}
+.third_title{
+    font-size: 24px;
+}
+.court_info .text span{
+    display: block;
+}
+.court_info .text span ~ span{
+    margin-top: 20px;
+}
+.re_se{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.re_se .card_item{
+    width: 100%;
+    background-color: #0cc;
+    border-radius: 120px 0px 0px 120px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.re_se .card_item_re{
+    width: 100%;
+    background-color: #0cc;
+    border-radius: 0px 120px 120px 0px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.re_se .card_item .pic{
+    width: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.re_se .card_item_re .pic{
+    width: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.re_se .card_item .pic img{
+    width: 100%;
+}
+.re_se .card_item_re .pic img{
+    width: 100%;
+}
+.re_se .card{
+    padding: 12px;
+}
+/* =================================footer */
+.foot{
+    background-color: #7b8;
+    padding: 20px;
+}
+.foot .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foot .content span{
+    display: block;
+    padding: 5px;
+}
+.foot li{
+    padding: 5px;
+}
+.foot li a{
+    text-decoration: none;
+    font-weight: 800;
+    color: #005;
+}
+.foot p{
+    text-align: center;
+    line-height: 20px;
+}
+/* ===========================================手機版 */
+@media screen and (max-width:768px){
+    /* =================================漢堡 */
+    .HB{
+        width: 40px;
+        height: 40px;
+        /* background-color: #000; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+    .HB span{
+        width: 30px;
+        height: 2px;
+        background-color: #777;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* ================================導覽列 */
+    .main-nav{
+        display: none;
+        position: absolute;
+        background-color: #faf;
+        width: 100%;
+        top: 100%;
+        left: 0;
+    }
+    /* ================================球館資訊 */
+    .court_info{
+        margin-bottom: 100px;
+    }
+    .court_posi .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .court_posi .third_title{
+        margin-bottom: 30px;
+    }
+    .court_info .third_title{
+        text-align: center;
+        padding: 10px;
+    }
+    .court_info  .court .text{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        line-height: 20px;
+    }
+    .court .pic{
+        width: 70%;
+        margin: auto;
+        border-radius: 8px;
+    }
+    .court a{
+        overflow: hidden;
+    }
+    .court img{
+        border-radius: 8px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .map{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .map iframe{
+        width: 100%;
+        height: 300px;
+    }
+    /* ================================預約服務 */
+    .reserve_service{
+        margin-bottom: 100px;
+    }
+    /* =================================課程報名 */
+    .course_apply{
+        margin-bottom: 100px;
+    }
+    .course_apply .third_title{
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .child,
+    .low,
+    .high{
+        border: 1px solid #ccc;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .apply .pic{
+        width: 100%;
+    }
+    .apply .pic img{
+        width: 100%;
+    }
+    .course_apply .four_title{
+        font-size: 16px;
+        font-weight: 900;
+        margin-bottom: 12px;
+    }
+    .course_apply .text{
+        line-height: 20px;
+        opacity: 0.7;
+        margin-bottom: 36px;
+    }
+    .content{
+        padding: 16px;
+    }
+    .course_apply .lin{
+        text-align: center;
+        margin: 10px;
+    }
+    .course_apply .lin a{
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #56ab4e;
+        border-radius: 8px;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    /* =================================店鋪商品 */
+    .products .content{
+        border: 2px solid #ddd;
+        transition: 1s;
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+        border: 1px solid #bbb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .products .content:hover{
+        border-radius: 0%;
+    }
+    .bmt_racket{
+        background: url(../image/products/badminton_racket.jpg);
+        border-radius: 0px 6px 0px 0px ;
+    }
+    .bmt_only{
+        background: url(../image/products/badminton_racket.jpg);
+    }
+    .bmt_shoes{
+        background: url(../image/products/badminton_racket.jpg);
+    }
+    .bmt_clothes{
+        background: url(../image/products/badminton_racket.jpg);
+    }
+    .bmt_line{
+        background: url(../image/products/badminton_racket.jpg);
+    }
+    .bmt_bag{
+        background: url(../image/products/badminton_racket.jpg);
+    }
+    .bmt_equip{
+        background: url(../image/products/badminton_racket.jpg);
+    }
+    .products_info .card{
+        color: #222;
+        font-weight: 800;
+        text-decoration: none;
+        display: block;
+        overflow: hidden;
+    }
+    .products .content h3{
+        font-size: 24px;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .products .content:hover>h3{
+        opacity: 1;
+    }
+}
+/* ===========================================桌機版 */
+@media screen and (min-width:768px){
+
+    .main-nav{
+        height: 100%;
+    }
+    .main-nav a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: #777;
+    }
+    #login{
+        padding: 8px 16px;
+        background-color: #56ab4e;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+
+    }
+    .main-header img{
+        width: 100%;
+    }
+    .court{
+        display: flex;
+    }
+    .banner img{
+        width: 100%;
+        display: block;
+    }
+    /* ==================================球館資訊 */
+    .court{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 80px;
+    }
+    .court .content{
+        width: 300px;
+        padding: 10px;
+    }
+    .court .content .third_title{
+        margin-bottom: 40px;
+    }
+    .court .content .text{
+        line-height: 40px;
+        opacity: 0.6;
+    }
+    .court .pic{
+        width: 500px;
+    }
+    .court .pic img{
+        width: 100%;
+    }
+    .court_posi .content{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .court_posi .content .third_title{
+        margin-bottom: 40px;
+    }
+    .map{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .map iframe{
+        width: 100%;
+        height: 400px;
+    }
+    /* ==================================課程報名 */
+    .child,
+    .low,
+    .high{
+        width: 60%;
+        min-width: 780px;
+        height: 260px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        background-color: lightgoldenrodyellow;
+        border-radius: 0px 80px 0px 80px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .apply .content{
+        width: 50%;
+        /* padding: 40px; */
+        margin: 0px 40px;
+    }
+    .apply .four_title{
+        font-weight: 800;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .apply .text{
+        margin-bottom: 80px;
+        line-height: 24px;
+        opacity: 0.7;
+    }
+    .apply .lin{
+        display: block;
+        text-align: end;
+        box-sizing: border-box;
+        position: relative;
+        animation-name: clc;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    .apple .lin:hover{
+        animation: none;
+    }
+    @keyframes clc{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    .apply .lin a{
+        text-decoration: none;
+        background-color: #56ab4e;
+        padding: 12px 26px;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 8px;
+        transition: 0.5s;
+
+    }
+    .apply .lin a:hover{
+        color: #0b498c;
+        background-color: #fff;
+        
+    }
+    .apply .pic{
+        width: 50%;
+        position: relative;
+        left: 0;
+    }
+    .apply .pic img{
+        width: 100%;
+    }
+    .course_apply .third_title{
+        margin-bottom: 50px;
+    }
+    .apply{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* ================================店鋪商品 */
+    .products_info{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 300px;
+    }
+    .bmt_racket{
+        width: 100px;
+        height: 550px;
+        padding: 10px;
+        margin: 5px;
+        background: url(../image/products/badminton_racket.jpg);
+        position: relative;
+        transition: 0.3s;  
+        border: 1px solid #ccc;          
+    }
+    .bmt_only{
+        width: 100px;
+        height: 550px;
+        padding: 10px;
+        margin: 5px;
+        background: url(../image/products/badminton_racket.jpg);
+        position: relative;
+        top: 50px;
+        transition: 0.3s;
+        border: 1px solid #ccc;
+    }
+    .bmt_shoes{
+        width: 100px;
+        height: 550px;
+        padding: 10px;
+        margin: 5px;
+        background: url(../image/products/badminton_racket.jpg);
+        position: relative;
+        top: 25px;
+        transition: 0.3s;
+        border: 1px solid #ccc;
+    }
+    .bmt_clothes{
+        width: 100px;
+        height: 550px;
+        padding: 10px;
+        margin: 5px;
+        background: url(../image/products/badminton_racket.jpg);
+        position: relative;
+        top: 75px;
+        transition: 0.3s;
+        border: 1px solid #ccc;
+    }
+    .bmt_line{
+        width: 100px;
+        height: 550px;
+        padding: 10px;
+        margin: 5px;
+        background: url(../image/products/badminton_racket.jpg);
+        position: relative;
+        top: 50px;
+        transition: 0.3s;
+        border: 1px solid #ccc;
+    }
+    .bmt_bag{
+        width: 100px;
+        height: 550px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        background: url(../image/products/badminton_racket.jpg);
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+    .bmt_equip{
+        width: 100px;
+        height: 550px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        background: url(../image/products/badminton_racket.jpg);
+        position: relative;
+        top: 40px;
+        transition: 0.3s;
+    }
+    .bmt_racket:hover,
+    .bmt_line:hover,
+    .bmt_equip:hover,
+    .bmt_shoes:hover{
+        background-color: #faa;
+        padding: 10px 50px;
+    }
+    .bmt_only:hover,
+    .bmt_clothes:hover,
+    .bmt_bag:hover{
+        background-color: #fa0;
+        padding: 10px 50px;
+    }
+}

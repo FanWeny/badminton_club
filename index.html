@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- logo -->
+        <a href="" class="logo">
+            <img src="./image/logo.svg">
+        </a>
+        <!-- 漢堡 -->
+        <div class="HB">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- 導覽列 -->
+        <nav class="main-nav">
+            <a href="#">球館資訊</a>
+            <a href="#">預約服務</a>
+            <a href="#">課程報名</a>
+            <a href="#">教練介紹</a>
+            <a href="#">店鋪商品</a>
+            <input type="button" id="login" value="登入">
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="pic">
+            <a href="#">
+                <img src="./image/05-2.jpg" alt="" class="move">
+            </a>
+            <!-- <a href="#">
+                <img src="./image/02.jpg" alt="">
+            </a> -->
+            <!-- <a href="#">
+                <img src="./image/03-1.png" alt="">
+            </a> -->
+        </div>
+        <div class="circle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section class="court_info">
+        <h2 class="sub_title">球館資訊</h2>
+        <hr>
+        <main class="court">
+            <div class="content">
+                <h3 class="third_title">球館簡介</h3>
+                <p class="text">大陸文件大小，培養對象氣息引擎來的總數，藥品自主，威望周邊，認定欄目各類監管，得知暴力網頁班，不用。</p>
+            </div>
+            <div class="pic">
+                <img src="./image/court_green.jpg" alt="球館簡介_場地">
+            </div>
+        </main>
+        <main class="court_posi">
+            <div class="content">
+                <h3 class="third_title">場館位置</h3>
+                <p class="text">
+                    <span>地址：新竹市光復路一段 71 巷 6 號</span>
+                    <span>電話：08 - 870087</span>
+                    <span>LINE：Badminton_123</span>
+                </p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6225.555419063146!2d121.02140654142923!3d24.78117494653999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346836304a17fe85%3A0xbf2d56b9e3a3694!2zMzAw5paw56u55biC5p2x5Y2A5YWJ5b6p6Lev5LiA5q61NzHlt7c!5e0!3m2!1szh-TW!2stw!4v1659426918128!5m2!1szh-TW!2stw"  style="border: 1px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+    </section>
+    <section class="reserve_service">
+        <h2 class="sub_title">預約服務</h2>
+        <hr>
+        <main class="re_se">
+            <div class="card_item">
+                <div class="pic">
+                    <img src="./image/court_small.jpg" alt="">
+                </div>
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="card_item_re">
+                <div class="card">
+
+                </div>
+                <div class="pic">
+                    <img src="./image/line.jpg" alt="穿線">
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="pic">
+                    <img src="./image/re-se-coach.jpg" alt="">
+                </div>
+                <div class="card">
+
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="course_apply">
+        <h2 class="sub_title">課程報名</h2>
+        <hr>
+        <main class="apply">
+            <h3 class="third_title">熱門課程</h3>
+            <div class="child">
+                <div class="pic">
+                    <img src="./image/child.jpg" alt="child">
+                </div>
+                <div class="content">
+                    <h4 class="four_title">兒童班</h4>
+                    <p class="text">
+                        由A級專業教練訓練基礎<br>
+                        提供兒童優良的訓練環境
+                    </p>
+                    <div class="lin">
+                        <a href="#">瞭解更多 ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="low">
+                <div class="pic">
+                    <img src="./image/low.jpg" alt="low">
+                </div>
+                <div class="content">
+                    <h4 class="four_title">初階班</h4>
+                    <p class="text">
+                        基礎揮拍姿勢矯正及協調性訓<br>
+                        練想打羽球卻無基礎的好選擇
+                    </p>
+                    <div class="lin">
+                        <a href="#">瞭解更多 ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="high">
+                <div class="pic">
+                    <img src="./image/high.jpg" alt="high">
+                </div>
+                <div class="content">
+                    <h4 class="four_title">高階班</h4>
+                    <p class="text">
+                        主攻球路組織及球場意識<br>
+                        適合基礎紮實及已可控球的球友
+                    </p>
+                    <div class="lin">
+                        <a href="#">瞭解更多 ></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="products">
+        <h2 class="sub_title">店鋪商品</h2>
+        <hr>
+        <main class="products_info">
+            <a href="#" class="card">
+                <div class="content bmt_racket">
+                    <!-- <img src="./image/products/badminton_racket.jpg" alt="badminton_racket"> -->
+                    <h3 class="third_title">羽球拍</h3>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="content bmt_only">
+                    <!-- <img src="" alt=""> -->
+                    <h3 class="third_title">羽球</h3>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="content bmt_shoes">
+                    <!-- <img src="" alt=""> -->
+                    <h3 class="third_title">羽球鞋</h3>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="content bmt_clothes">
+                    <!-- <img src="" alt=""> -->
+                    <h3 class="third_title">羽球衣</h3>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="content bmt_line">
+                    <!-- <img src="" alt=""> -->
+                    <h3 class="third_title">羽球線</h3>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="content bmt_bag">
+                    <!-- <img src="" alt=""> -->
+                    <h3 class="third_title">羽球包</h3>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="content bmt_equip">
+                    <!-- <img src="" alt=""> -->
+                    <h3 class="third_title">配件</h3>
+                </div>
+            </a>
+        </main>
+    </section>
+    <footer class="foot">
+        <main class="content">
+            <a href="" class="logo">
+                <img src="./image/logo.svg" alt="logo">
+            </a>
+            <div class="info">
+                <span>地址：新竹市光復路一段 71 巷 6 號</span>
+                <span>電話：08 - 870087</span>
+                <span>LINE：Badminton_123</span>
+            </div>
+            <ul>
+                <li><a href="#">球館資訊</a></li>
+                <li><a href="#">預約服務</a></li>
+                <li><a href="#">課程報名</a></li>
+                <li><a href="#">教練介紹</a></li>
+                <li><a href="#">店鋪商品</a></li>
+            </ul>
+        </main>
+        <hr>
+        <p>中壢 TibaMe 個人專題展示用<br>Wayne Web Design 2022 @ com.</p>
+    </footer>
+</body>
+<script>
+    var tl = gsap.timeline();
+    tl.to('.move' ,{
+        x: 0,
+        y: 0,
+        duration: 1,
+        rotation: 360,
+    })
+</script>
+</html>
