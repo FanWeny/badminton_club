@@ -24,12 +24,15 @@ html{
     left:0;
     width: 100%;
     height: 100%;
-    font-size: 10vw;
+    font-size: 12vw;
     text-align: center;
-    line-height:25vh;
+    line-height:30vh;
     text-transform:uppercase;
-    background-color: #fff;
+    background-color: rgba(255,255,255,.9);
     mix-blend-mode: screen;
+  }
+  .wrap_video{
+    margin-bottom: 100px;
   }
 /* .banner{
     margin-bottom: 50px;
@@ -153,7 +156,7 @@ html{
 .tile:hover
 {
 /*   background-color:#99aeff; */
-box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
+box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   transform:scale(1.05);
 }
 .tile:hover img
@@ -165,7 +168,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
   transform:translateX(0);
   opacity:1;
 }
-.dots
+/* .dots
 {
   position:absolute;
   bottom:20px;
@@ -192,7 +195,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
   transition: transform 0.4s ease-out, opacity  0.5s ease;
   transform: translateY(30px);
 
-}
+} */
 
 .tile:hover span
 {
@@ -200,7 +203,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
   transform:translateY(0px);
 }
 
-.dots span:nth-child(1)
+/* .dots span:nth-child(1)
 {
    transition-delay: 0.05s;
 }
@@ -211,7 +214,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
 .dots span:nth-child(3)
 {
    transition-delay: 0.15s;
-}
+} */
 .left_scroll{
     position: relative;
     right: 500px;
@@ -230,6 +233,42 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
     top: 500px;
     transform: rotate(90deg);
     opacity: 0;
+}
+.reserve_service{
+    margin-bottom: 100px;
+}
+.apply .lin{
+    display: block;
+    text-align: end;
+    box-sizing: border-box;
+    position: relative;
+    animation-name: clc;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.apple .lin:hover{
+    animation: none;
+}
+@keyframes clc{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.course_apply .more{
+    text-align: center;
+    margin-top: 50px;
+}
+.course_apply .more a{
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #56ab4e;
+    border-radius: 8px;
+    transition: 0.5s;
+    font-weight: 700;
+}
+.course_apply .more a:hover{
+    background-color: #000;
+    border: 1px solid rgba(0,0,0,.3);
 }
 /* ===========================================手機版 */
 @media screen and (max-width:768px){
@@ -262,12 +301,17 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
         left: 0;
     }
     .banner{
-        height: 65vh;
+        height: 100vh;
         margin-bottom: 50px;
     }
     .banner h2{
+        padding-top: 10vh;
         line-height:20vh;
         background-color: rgba(255,255,255,.8);
+    }
+    .wrap_video{
+        margin: 0;
+        width: 100%;
     }
     /* ================================球館資訊 */
     .court_info{
@@ -323,13 +367,31 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
     .re_se{
         display: flex;
         flex-wrap: wrap;
+        height: 60vh;
     }
     .re_se .card_item{
         width: 100%;
-        background-color: #ffa;
+        height: 100px;
+        background-color: rgb(135, 229, 199);
+        border-radius: 10px;
+        box-shadow: 0px 3px 2px 0px #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transform: scale(1,1);
+        transition: 0.5s;
+    }
+    .re_se .card_item:hover{
+        transform: scale(1.05,1.05);
     }
     .re_se .card_item img{
         display: none;
+    }
+    .rese_title{
+        font-weight: 600;
+        font-size: 20px;
+        color: rgb(54, 22, 183);
     }
     /* =================================課程報名 */
     .course_apply{
@@ -375,7 +437,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
         text-align: center;
         margin: 10px;
     }
-    .course_apply .lin a{
+    .apply .lin a{
         padding: 10px 20px;
         text-decoration: none;
         color: #fff;
@@ -383,49 +445,55 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
         border-radius: 8px;
         display: inline-block;
         white-space: nowrap;
+        transition: 0.5s;
+        font-weight: 700;
     }
+    .apply .lin a:hover{
+        color: #0b498c;
+        background-color: #fff;
+    }
+
     /* ======================== */
     .wrap {
         flex-direction: column;
-         width:400px;
+        width:400px;
     }
     /* =================================店鋪商品 */
+    .products_info{
+        margin-bottom: 100px;
+    }
     .products .content{
-        border: 2px solid #ddd;
         transition: 1s;
         width: 100%;
         height: 120px;
         overflow: hidden;
-        border: 1px solid #bbb;
+        border-top: 1px solid #ccc;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         box-sizing: border-box;
-    }
-    .products .content:hover{
-        border-radius: 0%;
     }
     .bmt_racket{
         background: url(../image/products/badminton_racket.jpg);
-        border-radius: 0px 6px 0px 0px ;
     }
     .bmt_only{
-        background: url(../image/products/badminton_racket.jpg);
+        background: url(../image/products/bmt_ball_phone.jpg);
     }
     .bmt_shoes{
-        background: url(../image/products/badminton_racket.jpg);
+        background: url(../image/products/bmt_shoes_phone.jpg);
     }
     .bmt_clothes{
-        background: url(../image/products/badminton_racket.jpg);
+        background: url(../image/products/bmt_clothes_phone.jpg);
     }
     .bmt_line{
-        background: url(../image/products/badminton_racket.jpg);
+        background: url(../image/products/bmt_line_phone.jpg);
     }
     .bmt_bag{
-        background: url(../image/products/badminton_racket.jpg);
+        background: url(../image/products/bmt_bag_phone.jpg);
     }
     .bmt_equip{
-        background: url(../image/products/badminton_racket.jpg);
+        background: url(../image/products/bmt_equip_phone.jpg);
+        border-bottom: 1px solid #ccc;
     }
     .products_info .card{
         color: #222;
@@ -436,12 +504,9 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
     }
     .products .content h3{
         font-size: 24px;
-        opacity: 0;
-        transition: 0.5s;
+        margin-left: 10%;
     }
-    .products .content:hover>h3{
-        opacity: 1;
-    }
+
 }
 /* ===========================================桌機版 */
 @media screen and (min-width:768px){
@@ -563,6 +628,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
         position: absolute;
         left: 38%;
         top:45%;
+        color: rgb(54, 22, 183);
         font-size: 24px;
         font-weight: 900;
         z-index: 2;
@@ -578,7 +644,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
         justify-content: space-around;
         align-items: center;
         margin: 20px;
-        background-color: lightgoldenrodyellow;
+        background-color: rgb(155, 174, 253);
         border-radius: 0px 80px 0px 80px;
         box-sizing: border-box;
         overflow: hidden;
@@ -602,11 +668,13 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
         font-weight: 800;
         margin-bottom: 30px;
         font-size: 20px;
+        color: #fff;
     }
     .apply .text{
         margin-bottom: 80px;
         line-height: 24px;
-        opacity: 0.7;
+        opacity: 0.8;
+        color: #fff;
     }
     .apply .lin{
         display: block;
@@ -637,7 +705,6 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
     .apply .lin a:hover{
         color: #0b498c;
         background-color: #fff;
-        
     }
     .apply .pic{
         width: 50%;
@@ -669,7 +736,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.   64);
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-bottom: 300px;
+        margin-bottom: 200px;
     }
     .products .card{
         text-decoration: none;
