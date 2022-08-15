@@ -155,7 +155,6 @@ html{
 }
 .tile:hover
 {
-/*   background-color:#99aeff; */
 box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   transform:scale(1.05);
 }
@@ -168,71 +167,10 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   transform:translateX(0);
   opacity:1;
 }
-/* .dots
-{
-  position:absolute;
-  bottom:20px;
-  right:30px;
-  margin: 0 auto;
-  width:30px;
-  height:30px;
-  color:currentColor;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:space-around;
-
-}
-
-.dots span
-{
-    width: 5px;
-    height:5px;
-    background-color: currentColor;
-    border-radius: 50%;
-    display:block;
-  opacity:0;
-  transition: transform 0.4s ease-out, opacity  0.5s ease;
-  transform: translateY(30px);
-
-} */
-
 .tile:hover span
 {
   opacity:1;
   transform:translateY(0px);
-}
-
-/* .dots span:nth-child(1)
-{
-   transition-delay: 0.05s;
-}
-.dots span:nth-child(2)
-{
-   transition-delay: 0.1s;
-}
-.dots span:nth-child(3)
-{
-   transition-delay: 0.15s;
-} */
-.left_scroll{
-    position: relative;
-    right: 500px;
-    top: 500px;
-    transform: rotate(-90deg);
-    opacity: 0;
-}
-.center_scroll{
-    position: relative;
-    top: 500px;
-    opacity: 0;
-}
-.right_scroll{
-    position: relative;
-    left: 500px;
-    top: 500px;
-    transform: rotate(90deg);
-    opacity: 0;
 }
 .reserve_service{
     margin-bottom: 100px;
@@ -404,7 +342,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     }
     .rese_title{
         font-weight: 600;
-        font-size: 20px;
+        font-size: 5vw;
         color: rgb(54, 22, 183);
     }
     /* =================================課程報名 */
@@ -552,6 +490,25 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
         width: 100%;
         display: block;
     } */
+    .left_scroll{
+        position: relative;
+        right: 500px;
+        top: 500px;
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+    .center_scroll{
+        position: relative;
+        top: 500px;
+        opacity: 0;
+    }
+    .right_scroll{
+        position: relative;
+        left: 500px;
+        top: 500px;
+        transform: rotate(90deg);
+        opacity: 0;
+    }
     /* ==================================球館資訊 */
     .court{
         display: flex;
@@ -645,10 +602,10 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     }
     .rese_title{
         position: absolute;
-        left: 35%;
+        left: 32%;
         top:45%;
         color: rgb(54, 22, 183);
-        font-size: 28px;
+        font-size: 2vw;
         font-weight: 900;
         z-index: 2;
     }

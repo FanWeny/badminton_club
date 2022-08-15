@@ -57,36 +57,34 @@ if(minWidth > 768){
         opacity: 1,
         duration: 2,
     });
-    
-}
-
-gsap.to(".left_scroll",{
-    scrollTrigger: ".coach_title",
-    x: 500,
-    y: -500,
-    rotate: 0,
-    opacity: 1,
-    duration: 2,
-});
-gsap.to(".center_scroll",{
-    scrollTrigger: ".coach_title",
-    y: -500,
-    opacity: 1,
-    duration: 2,
-    delay: 0.5,
-});
-gsap.to(".right_scroll",{
-    scrollTrigger: ".coach_title",
-    x: -500,
-    y: -500,
-    rotate: 0,
-    opacity: 1,
-    duration: 2,
-    delay: 1,
-});
-gsap.to(".maptext", {
-    scrollTrigger: ".map",
-    y: -300,
-    opacity: 1,
-    duration: 2,
-});
+    gsap.to(".left_scroll",{
+        scrollTrigger: ".coach_title",
+        x: 500,
+        y: -500,
+        rotate: 0,
+        opacity: 1,
+        duration: 2,
+    });
+    gsap.to(".center_scroll",{
+        scrollTrigger: ".coach_title",
+        y: -500,
+        opacity: 1,
+        duration: 2,
+        delay: 0.5,
+    });
+    gsap.to(".right_scroll",{
+        scrollTrigger: ".coach_title",
+        x: -500,
+        y: -500,
+        rotate: 0,
+        opacity: 1,
+        duration: 2,
+        delay: 1,
+    });
+    gsap.to(".maptext", {
+        scrollTrigger: ".map",
+        y: -300,
+        opacity: 1,
+        duration: 2,
+    });
+};
