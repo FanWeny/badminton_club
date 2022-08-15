@@ -253,6 +253,9 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
+.course_apply{
+    margin-bottom: 150px;
+}
 .course_apply .more{
     text-align: center;
     margin-top: 50px;
@@ -313,6 +316,9 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
         margin: 0;
         width: 100%;
     }
+    .foot .content ul{
+        display: flex;
+    }
     /* ================================球館資訊 */
     .court_info{
         margin-bottom: 100px;
@@ -323,6 +329,10 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
         align-items: center;
         margin-bottom: 20px;
     }
+    .court_posi .content span{
+        font-weight: 700;
+        color: #777;
+    }
     .court_posi .third_title{
         margin-bottom: 30px;
     }
@@ -332,10 +342,13 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     }
     .court_info  .court .text{
         width: 60%;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
         padding: 20px;
         line-height: 20px;
+        color: #999;
+        font-weight: 700;
     }
     .court .pic{
         width: 70%;
@@ -555,11 +568,12 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
         opacity: 0;
     }
     .court .content .third_title{
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     .court .content .text{
         line-height: 40px;
-        opacity: 0.6;
+        color: #999;
+        font-weight: 700;
     }
     .court .pic_court{
         width: 500px;
@@ -573,6 +587,10 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     .court_posi .content{
         text-align: center;
         margin-bottom: 40px;
+    }
+    .court_posi .text{
+        color: #999;
+        font-weight: 700;
     }
     .court_posi .content .third_title{
         margin-bottom: 40px;
@@ -611,7 +629,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     .re_se .card_item .pic_rese{
         border-radius: 30px;
         position: relative;
-        background: rgb(135, 229, 199);
+        background: rgb(154, 226, 203);
         min-width: 150px;
     }
     .re_se .card_item .pic_rese img{
@@ -626,10 +644,10 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     }
     .rese_title{
         position: absolute;
-        left: 38%;
+        left: 35%;
         top:45%;
         color: rgb(54, 22, 183);
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 900;
         z-index: 2;
     }
@@ -644,7 +662,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
         justify-content: space-around;
         align-items: center;
         margin: 20px;
-        background-color: rgb(155, 174, 253);
+        background-color: #F4D0D2;
         border-radius: 0px 80px 0px 80px;
         box-sizing: border-box;
         overflow: hidden;
@@ -667,14 +685,14 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     .apply .four_title{
         font-weight: 800;
         margin-bottom: 30px;
-        font-size: 20px;
-        color: #fff;
+        font-size: 24px;
+        color: #444;
     }
     .apply .text{
+        font-weight: 600;
         margin-bottom: 80px;
         line-height: 24px;
-        opacity: 0.8;
-        color: #fff;
+        color: #999;
     }
     .apply .lin{
         display: block;

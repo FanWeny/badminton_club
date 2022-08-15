@@ -21,16 +21,16 @@ hr{
     margin-bottom: 30px;
 }
 .sub_title{
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
 }
 .third_title{
-    font-size: 24px;
+    font-size: 28px;
 }
 
 /* =================================footer */
 .foot{
-    background-color: #7b8;
+    background-color: #fefad1;
     padding: 20px;
 }
 .foot .content{
@@ -42,6 +42,8 @@ hr{
 .foot .content span{
     display: block;
     padding: 5px;
+    font-weight: 700;
+    color: #777;
 }
 .foot li{
     padding: 5px;
@@ -49,7 +51,7 @@ hr{
 .foot li a{
     text-decoration: none;
     font-weight: 800;
-    color: #000;
+    color: #222;
     transition: 0.5s;
 }
 .foot li a:hover{
@@ -58,6 +60,7 @@ hr{
 .foot p{
     text-align: center;
     line-height: 20px;
+    color: #777;
 }
 
 @media screen and (min-width:768px){
