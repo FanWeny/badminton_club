@@ -15,8 +15,6 @@ if(minWidth > 768){
         opacity: 1,
         duration: 2,
     });
-
-
     gsap.to(".rese_left", {
         scrollTrigger: ".rese_left",
         x: 300,
@@ -35,7 +33,6 @@ if(minWidth > 768){
         opacity: 1,
         duration: 2,
     });
-
     gsap.to(".maptext", {
         scrollTrigger: ".map",
         y: -300,
@@ -86,4 +83,10 @@ gsap.to(".right_scroll",{
     opacity: 1,
     duration: 2,
     delay: 1,
+});
+gsap.to(".maptext", {
+    scrollTrigger: ".map",
+    y: -300,
+    opacity: 1,
+    duration: 2,
 });

@@ -10,8 +10,6 @@ $(function () {
         },1200,'easeInSine'),
         $(this).css({
             width: 500,
-            
         },1200,'easeInSine')
     })
 });
-
