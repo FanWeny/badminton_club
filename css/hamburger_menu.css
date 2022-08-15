@@ -129,7 +129,7 @@ input {
     transition-delay: 0s, 350ms;
   }
   nav a:hover, nav a:focus {
-    color: rgba(10, 38, 57, 0.75);
+    color: rgb(216, 255, 169);
     font-weight: 900;
   }
   
