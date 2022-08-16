@@ -1,19 +1,18 @@
-input {
+.main-header input {
     position: fixed;
     opacity: 0;
   }
   
-  label {
+  .main-header label {
     position: absolute;
     margin: 0;
     padding: 0;
-    /* right: 0; */
     border: none;
     outline: none;
     background: none;
     cursor: pointer;
   }
-  label::before {
+  .main-header label::before {
     position: fixed;
     z-index: 1;
     top: 0;
@@ -26,7 +25,7 @@ input {
     pointer-events: none;
     transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
-  label .burger {
+  .main-header label .burger {
     position: fixed;
     top: 1em;
     right: 1em;
@@ -37,8 +36,8 @@ input {
     padding: 0;
     transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
-  label .burger::before,
-  label .burger .bar, label .burger::after {
+  .main-header label .burger::before,
+  .main-header label .burger .bar, .main-header label .burger::after {
     position: absolute;
     left: 0;
     display: block;
@@ -48,20 +47,20 @@ input {
     content: "";
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
-  label .burger .bar {
+  .main-header label .burger .bar {
     top: 44%;
   }
-  label .burger::before {
+  .main-header label .burger::before {
     top: 0;
     transform-origin: top left;
   }
-  label .burger::after {
+  .main-header label .burger::after {
     bottom: 0;
     transform-origin: bottom left;
   }
   
-  input:focus + label .burger,
-  label:hover .burger {
+  .main-header input:focus + .main-header label .burger,
+  .main-header label:hover .burger {
     opacity: 0.75;
   }
   
@@ -142,20 +141,20 @@ input {
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   } */
   
-  [id=navcheck]:checked + label::before {
+  [id=navcheck]:checked + .main-header label::before {
     opacity: 1;
     pointer-events: auto;
   }
-  [id=navcheck]:checked + label .burger::before, [id=navcheck]:checked + label .burger::after {
+  [id=navcheck]:checked + .main-header label .burger::before, [id=navcheck]:checked + .main-header label .burger::after {
     width: 141.42%;
   }
-  [id=navcheck]:checked + label .burger::before {
+  [id=navcheck]:checked + .main-header label .burger::before {
     transform: rotate(45deg) translateY(-50%);
   }
-  [id=navcheck]:checked + label .burger::after {
+  [id=navcheck]:checked + .main-header label .burger::after {
     transform: rotate(-45deg) translateY(50%);
   }
-  [id=navcheck]:checked + label .burger .bar {
+  [id=navcheck]:checked + .main-header label .burger .bar {
     transform: scale(0.1);
   }
   [id=navcheck]:checked ~ nav {

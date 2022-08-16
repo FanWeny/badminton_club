@@ -14,7 +14,7 @@
 <body>
     <header class="main-header">
         <!-- logo -->
-        <a href="" class="logo">
+        <a href="./index.html" class="logo">
             <img src="./image/logo.svg">
         </a>
         <!-- hamburger -->
@@ -27,31 +27,28 @@
             </span>
         </label>
         <nav id="menu">
-            <a href="./court-information.html">球館資訊</a>
-            <a href="./reserve-service.html">預約服務</a>
             <a href="./course-apply.html">課程報名</a>
             <a href="./coach.html">教練介紹</a>
+            <a href="./reserve-service.html">預約服務</a>
             <a href="./products.html">店舖商品</a>
+            <a href="./court-information.html">球館資訊</a>
             <a href="#">登入</a>
             <!-- <input type="button" id="login" value="登入"> -->
         </nav>
         <!-- 導覽列 -->
         <nav class="main-nav">
-            <a href="./court-information.html">球館資訊</a>
-            <a href="./reserve-service.html">預約服務</a>
             <a href="./course-apply.html">課程報名</a>
             <a href="./coach.html">教練介紹</a>
+            <a href="./reserve-service.html">預約服務</a>
             <a href="./products.html">店舖商品</a>
+            <a href="./court-information.html">球館資訊</a>
             <a href="#">登入</a>
             <!-- <input type="button" id="login" value="登入"> -->
         </nav>
     </header>
     <section class="course-apply">
         <h2 class="title">課程報名</h2>
-        <picture class="s-pic">
-            <img src="./images/s-badminton.png" alt="s-badminton"><!-- =============小羽球 -->
-        </picture>
-        <div class="line"></div><!-- =============線 -->
+        <hr>
         <main class="course">
             <div class="choose">
                 <a href="#">暑期夏令營</a>
@@ -66,43 +63,69 @@
                     <div class="card">
                         <h3 class="sub-title">課程目標</h3>
                         <ul class="course-content">
-                            <li>1.讓學員瞭解羽球的基本知識與技能</li>
-                            <li>2.鍛鍊健康體適能、享受羽球運動樂趣並體驗羽球運動之美</li>
-                            <li>3.培養終身運動習慣並能藉以促進社交技巧</li>
+                            <li>1. 讓學員瞭解羽球的基本知識與技能</li>
+                            <li>2. 鍛鍊健康體適能、享受羽球運動樂趣並體驗羽球運動之美</li>
+                            <li>3. 培養終身運動習慣並能藉以促進社交技巧</li>
                         </ul>
                     </div>
                     <div class="card">
                         <h3 class="sub-title">課程概述</h3>
                         <ul class="course-content">
-                            <li>1.羽球基本概念(簡史、賽制、著名賽事、球場禮節、場地、設備與器材)</li>
-                            <li>2.羽球基本技術、簡要規則、裁判法</li>
-                            <li>3.課外羽球技術練習、分組循環比賽、跨組挑戰賽</li>
-                            <li>4.基本技術測驗</li>
+                            <li>1. 羽球基本概念(簡史、賽制、著名賽事、球場禮節、場地、設備與器材)</li>
+                            <li>2. 羽球基本技術、簡要規則、裁判法</li>
+                            <li>3. 課外羽球技術練習、分組循環比賽、跨組挑戰賽</li>
+                            <li>4. 基本技術測驗</li>
                         </ul>
                     </div>
                 </div>
-                <div class="bgc"><img src="./images/page4/小戴.jfif" alt="">
+                <div class="bgc">
+                    <img src="./image/page4/apply_image.jpg" alt="">
                 </div>
             </div>
+            <!-- <div class="line">
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+            </div> -->
             <div class="apply">
                 <div class="card-apply">
                     <h3 class="sub-title">班級資訊</h3>
                     <ul>
-                        <li>已報名人數： 6 人</li>
-                        <li>開課日期： 2022/7/16 </li>
-                        <li>授課教練因時間配置將會有所不同</li>
-                        <li>上課時間：上午 9:00 ~ 12:00</li>
+                        <li>班別：暑期夏令營</li>
+                        <li>授課教練：戴姿穎</li>
+                        <li>已報名人數： 3 人</li>
+                        <li>開課日期： 2022 / 08 / 16 </li>
+                        <li>上課時間：AM 9:00 ~ AM 11:00</li>
                     </ul>
                 </div>
-                <div class="sel">
-                    <label for="">報名人數：</label>
-                    <select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                    </select>
-                </div>
-                <div class="btn">
-                    <input type="submit" value="繼續填寫資訊">
+                <div class="info">
+                    <h3 class="sub-title">填寫資料</h3>
+                    <div class="sel">
+                        <label for="text">姓名：</label>
+                        <input type="text" id="text">
+                    </div>
+                    <div class="sel">
+                        <label for="phone">電話：</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="sel">
+                        <label for="email">信箱：</label>
+                        <input type="email" name="" id="email">
+                    </div>
+                    <div class="sel">
+                        <label for="much">報名人數：</label>
+                        <select id="much">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="報名">
+                    </div>
                 </div>
             </div>
         </main>
@@ -118,11 +141,11 @@
                 <span>LINE：Badminton_123</span>
             </div>
             <ul>
-                <li><a href="./court-information.html">球館資訊</a></li>
-                <li><a href="./reserve-service.html">預約服務</a></li>
                 <li><a href="./course-apply.html">課程報名</a></li>
                 <li><a href="./coach.html">教練介紹</a></li>
+                <li><a href="./reserve-service.html">預約服務</a></li>
                 <li><a href="./products.html">店鋪商品</a></li>
+                <li><a href="./court-information.html">球館資訊</a></li>
             </ul>
         </main>
         <hr>
