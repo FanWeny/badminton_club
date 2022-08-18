@@ -6,98 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hamburger_menu.css">
     <link rel="stylesheet" href="./css/coach.css">
     <link rel="icon" href="./images/首頁/mdi_badminton.ico" type="image/x-icon" />
     <title>羽社</title>
 </head>
 <body>
-    <header class="first">
-        <div class="frame">
-            <h1>
-            <a href="./index.html" class="logo">
-                <img src="./images/logo.png" alt="logo">
-            </a>
-            </h1>
-            <nav class="main-list">
-                <ul class="first-list">
-                    <a href="./court-information.html">球館資訊</a>
-                    <a href="./reserve-service.html">預約服務</a>
-                    <a href="./course-apply.html">課程報名</a>
-                    <a href="./coach.html">教練介紹</a>
-                    <a href="./products.html">店舖商品</a>
-                </ul>
-            </nav>
-            <div class="login">
-            <a href="#" >登入</a>
-            </div>
-        </div>
+    <header class="main-header">
+        <!-- logo -->
+        <a href="./index.html" class="logo">
+            <img src="./image/logo.svg">
+        </a>
+        <!-- hamburger -->
+        <input type="checkbox" id="navcheck" role="button" title="menu">
+        <label for="navcheck" aria-hidden="true"            title="menu">
+            <span class="burger">
+                <span class="bar">
+                    <span class="visuallyhidden">Menu</span>
+                </span>
+            </span>
+        </label>
+        <nav id="menu">
+            <a href="./course-apply.html">課程報名</a>
+            <a href="./coach.html">教練介紹</a>
+            <a href="./reserve-service.html">預約服務</a>
+            <a href="./products.html">店舖商品</a>
+            <a href="./court-information.html">球館資訊</a>
+            <a href="#">登入</a>
+        </nav>
     </header>
      <!-- section 4 ==========教練介紹 -->
      <section class="coach">
-        <h2 class="title">教練介紹</h2>
-        <picture class="s-pic">
-            <img src="./images/s-badminton.png" alt=""><!-- =============小羽球 -->
-        </picture>
-        <div class="line"></div><!-- =============線 -->
+        <h2 class="title">◆ 教練介紹 ◆</h2>
         <main class="single-coach">
             <h3 class="sub-title">單打教練</h3>
             <div class="frame">
-                <div class="card">
-                    <div class="sky">
-                        <h4 class="third-title">TAI TZU YING</h4>
-                        <p>CHINESE TAIPEI</p>
-                    </div>
-                    <div class="content">
-                        <h4>球齡 18 年 ， 教練資歷 3 年</h4>
-                        <h4>教學領域</h4>
-                        <p>發力技巧，基礎步伐</p>
-                        <h4>焦點戰績</h4>
-                        <p>
-                            2021 
-                            YONEX French Open Finalist<br>
-                            2020 
-                            YONEX All England Open Semi-finalist<br>
-                            2020 
-                            YONEX All England Open Finalist<br>
-                            2019 
-                            YONEX Chinese Taipei Open Champion<br>
-                            2019 
-                            Thailand Open Champion<br>
-                            2019 
-                            Indonesia Open Champion
-                        </p>
+                <div class="item">
+                    <div class="card">
+                        <div class="sky">
+                            <h4 class="third-title">TAI TZU YING</h4>
+                            <p>CHINESE TAIPEI</p>
+                        </div>
+                        <div class="content">
+                            <h4>球齡 18 年 ， 教練資歷 3 年</h4>
+                            <h4>教學領域</h4>
+                            <p>發力技巧，基礎步伐</p>
+                            <h4>焦點戰績</h4>
+                            <p>
+                                2021 
+                                YONEX French Open Finalist<br>
+                                2020 
+                                YONEX All England Open      Semi-finalist<br>
+                                2020 
+                                YONEX All England Open  Finalist<br>
+                                2019 
+                                YONEX Chinese Taipei Open       Champion<br>
+                                2019 
+                                Thailand Open Champion<br>
+                                2019 
+                                Indonesia Open Champion
+                            </p>
+                        </div>
                     </div>
                     <div class="coach-pic">
-                        <img src="./images/coach/Tai Tzu Ying.jfif" alt="">
+                        <img src="./image/coach/Tai Tzu Ying.jfif" alt="TAI TZU YING">
                     </div>
                 </div>
-                <div class="card">
-                    <div class="sky">
-                        <h4 class="third-title">CHOU TIEN CHEN</h4>
-                        <p>CHINESE TAIPEI</p>
-                    </div>
-                    <div class="content">
-                        <h4>球齡 20 年 ， 教練資歷 5 年</h4>
-                        <h4>教學領域</h4>
-                        <p>擊球節奏，基礎揮拍</p>
-                        <h4>焦點戰績</h4>
-                        <p>
-                            2021 
-                            YONEX French Open Finalist<br>
-                            2020 
-                            YONEX All England Open Semi-finalist<br>
-                            2020 
-                            YONEX All England Open Finalist<br>
-                            2019 
-                            YONEX Chinese Taipei Open Champion<br>
-                            2019 
-                            Thailand Open Champion<br>
-                            2019 
-                            Indonesia Open Champion
-                        </p>
+                <div class="item">
+                    <div class="card">
+                        <div class="sky">
+                            <h4 class="third-title">CHOU TIEN CHEN</h4>
+                            <p>CHINESE TAIPEI</p>
+                        </div>
+                        <div class="content">
+                            <h4>球齡 20 年 ， 教練資歷 5 年</h4>
+                            <h4>教學領域</h4>
+                            <p>擊球節奏，基礎揮拍</p>
+                            <h4>焦點戰績</h4>
+                            <p>
+                                2021 
+                                YONEX French Open Finalist<br>
+                                2020 
+                                YONEX All England Open Semi-finalist<br>
+                                2020 
+                                YONEX All England Open Finalist<br>
+                                2019 
+                                YONEX Chinese Taipei Open Champion<br>
+                                2019 
+                                Thailand Open Champion<br>
+                                2019 
+                                Indonesia Open Champion
+                            </p>
+                        </div>
                     </div>
                     <div class="coach-pic">
-                        <img src="./images/coach/Chou Tien Chen.jfif" alt="">
+                        <img src="./image/coach/Chou Tien Chen.jfif" alt="">
                     </div>
                 </div>
             </div>
@@ -105,106 +108,95 @@
         <main class="double-coach">
             <h3 class="sub-title">雙打教練</h3>
             <div class="frame">
-                <div class="card">
-                    <div class="sky">
-                        <h4 class="third-title">LEE YANG</h4>
-                        <p>CHINESE TAIPEI</p>
-                    </div>
-                    <div class="content">
-                        <h4>球齡 15 年 ， 教練資歷 2 年</h4>
-                        <h4>教學領域</h4>
-                        <p>輪轉觀念，防守分球</p>
-                        <h4>焦點戰績</h4>
-                        <p>
-                            2021 
-                            YONEX Thailand Open Champion<br>
-                            2021 
-                            Toyota Thailand Open Champion<br>
-                            2021 
-                            HSBC BWF World Tour Finals 2020<br>
-                            2020 
-                            Barcelona Spain Masters Finalist<br>
-                            2020 
-                            Tokyo Olympic Games Gold medalist<br>
-                            2019 
-                            YONEX-SUNRISE India Open Champion<br>
-                            2019 
-                            Barcelona Spain Masters Champion
-                        </p>
+                <div class="item">
+                    <div class="card">
+                        <div class="sky">
+                            <h4 class="third-title">LEE YANG</h4>
+                            <p>CHINESE TAIPEI</p>
+                        </div>
+                        <div class="content">
+                            <h4>球齡 15 年 ， 教練資歷 2 年</h4>
+                            <h4>教學領域</h4>
+                            <p>輪轉觀念，防守分球</p>
+                            <h4>焦點戰績</h4>
+                            <p>
+                                2021 
+                                YONEX Thailand Open Champion<br>
+                                2021 
+                                Toyota Thailand Open Champion<br>
+                                2021 
+                                HSBC BWF World Tour Finals 2020<br>
+                                2020 
+                                Barcelona Spain Masters Finalist<br>
+                                2020 
+                                Tokyo Olympic Games Gold medalist<br>
+                                2019 
+                                YONEX-SUNRISE India Open Champion<br>
+                                2019 
+                                Barcelona Spain Masters Champion
+                            </p>
+                        </div>
                     </div>
                     <div class="coach-pic">
-                        <img src="./images/coach/Lee Yang.jpg" alt="">
+                        <img src="./image/coach/Lee Yang.jpg" alt="TAI TZU YING">
                     </div>
                 </div>
-                <div class="card">
-                    <div class="sky">
-                        <h4 class="third-title">WANG CHI LIN</h4>
-                        <p>CHINESE TAIPEI</p>
-                    </div>
-                    <div class="content">
-                        <h4>球齡 16 年 ， 教練資歷 2 年</h4>
-                        <h4>教學領域</h4>
-                        <p>爆發重扣，重心控制</p>
-                        <h4>焦點戰績</h4>
-                        <p>
-                            2021 
-                            YONEX Thailand Open Champion<br>
-                            2021 
-                            Toyota Thailand Open Champion<br>
-                            2021 
-                            HSBC BWF World Tour Finals 2020<br>
-                            2020 
-                            Barcelona Spain Masters Finalist<br>
-                            2020 
-                            Tokyo Olympic Games Gold medalist<br>
-                            2019 
-                            Barcelona Spain Masters Champion<br>
-                            2019 
-                            YONEX-SUNRISE India Open Champion
-                        </p>
+                <div class="item">
+                    <div class="card">
+                        <div class="sky">
+                            <h4 class="third-title">WANG CHI LIN</h4>
+                            <p>CHINESE TAIPEI</p>
+                        </div>
+                        <div class="content">
+                            <h4>球齡 16 年 ， 教練資歷 2 年</h4>
+                            <h4>教學領域</h4>
+                            <p>爆發重扣，重心控制</p>
+                            <h4>焦點戰績</h4>
+                            <p>
+                                2021 
+                                YONEX Thailand Open Champion<br>
+                                2021 
+                                Toyota Thailand Open Champion<br>
+                                2021 
+                                HSBC BWF World Tour Finals 2020<br>
+                                2020 
+                                Barcelona Spain Masters Finalist<br>
+                                2020 
+                                Tokyo Olympic Games Gold medalist<br>
+                                2019 
+                                Barcelona Spain Masters Champion<br>
+                                2019 
+                                YONEX-SUNRISE India Open Champion
+                            </p>
+                        </div>
                     </div>
                     <div class="coach-pic">
-                        <img src="./images/coach/Wang Chi Ling.jpg" alt="">
+                        <img src="./image/coach/Wang Chi Ling.jpg" alt="">
                     </div>
                 </div>
             </div>
         </main>
     </section>
-    <footer>
-        <div class="content-foot">
-            <picture class="logo">
-                <img src="./images/logo.svg" alt="logo">
-            </picture>
-            <div class="foot-info">
-                <div class="text">
-                    <span>地址：新竹市東區光復路一段2號</span>
-                    <span>電話：08-870087</span>
-                    <span>LINE：Badminton_Hot</span>
-                </div>
-                <div class="icon">
-                    <a href="#"><img src="./images/fb.svg" alt="facebook"></a>
-                    <a href="#"><img src="./images/ig.svg" alt="instagram"></a>
-                    <a href="#"><img src="./images/twit.svg" alt="twitter"></a>
-                </div>
+    <footer class="foot">
+        <main class="content">
+            <a href="" class="logo">
+                <img src="./image/logo.svg" alt="logo">
+            </a>
+            <div class="info">
+                <span>地址：新竹市光復路 710 巷 870 號</span>
+                <span>電話：08 - 870087</span>
+                <span>LINE：Badminton_123</span>
             </div>
-            <div class="foot-list">
-                <a href="./court-information.html">球館資訊</a>
-                <a href="./reserve-service.html">預約服務</a>
-                <a href="./course-apply.html">課程報名</a>
-                <a href="./coach.html">教練介紹</a>
-                <a href="./products.html">店舖商品</a>
-            </div>
-            <div class="foot-contact">
-                <div class="FAQ">
-                    <a href="#">聯繫我們</a>
-                    <a href="#">FAQ</a>
-                </div>
-                <div class="privacy">
-                    <a href="#">隱私權政策</a>
-                </div>
-            </div>
-        </div>
-        <div class="writer">© 2022 Wenyan Design</div>
+            <ul>
+                <li><a href="./course-apply.html">課程報名</a></li>
+                <li><a href="./coach.html">教練介紹</a></li>
+                <li><a href="./reserve-service.html">預約服務</a></li>
+                <li><a href="./products.html">店鋪商品</a></li>
+                <li><a href="./court-information.html">球館資訊</a></li>
+            </ul>
+        </main>
+        <hr>
+        <p>中壢 TibaMe 個人專題展示用<br>Wayne Web Design 2022 @ com.</p>
     </footer>
 </body>
 </html>
