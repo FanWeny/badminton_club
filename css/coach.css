@@ -129,7 +129,7 @@
 /* ========================================手機版 */
 @media screen and (max-width: 768px){
     .coach-pic{
-        width: 90%;
+        width: 80%;
     }
     .card .content h4,
     .card .content p{
@@ -154,5 +154,12 @@
     .sky p{
         font-size: 20px;
         color: #888;
+    }
+    .item{
+        flex-direction: column-reverse;
+    }
+    .card{
+        position: relative;
+        top: -30px;
     }
 }
