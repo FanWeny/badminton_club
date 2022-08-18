@@ -189,23 +189,35 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 .course_apply{
     margin-bottom: 150px;
 }
-.course_apply .more{
+.course_apply .more,
+.coach .more{
     text-align: center;
     margin-top: 50px;
+    
 }
-.course_apply .more a{
+.course_apply .more a,
+.coach .more a{
     padding: 15px 30px;
+    display: block;
     text-decoration: none;
     color: #fff;
     background-color: #56ab4e;
     border-radius: 8px;
     transition: 0.5s;
     font-weight: 700;
+    border: 1px solid rgba(0,0,0,0);
 }
-.course_apply .more a:hover{
+.course_apply .more a:hover,
+.coach .more a:hover{
     background-color: #000;
     border: 1px solid rgba(0,0,0,.3);
 }
+.coach .more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* ===========================================手機版 */
 @media screen and (max-width:768px){
     /* =================================漢堡 */
@@ -253,6 +265,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
         display: flex;
         white-space: nowrap;
     } */
+
     /* ================================球館資訊 */
     .court_info{
         margin-bottom: 100px;
@@ -341,6 +354,11 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
         color: rgb(54, 22, 183);
     }
     /* =================================課程報名 */
+    .apply{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .course_apply{
         margin-bottom: 100px;
     }
